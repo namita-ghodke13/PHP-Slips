@@ -1,0 +1,39 @@
+<!--Q.1) Write the HTML code for generating the form as shown below.Apply 
+the internal CSS to following form to change the font size of the heading to 
+6pt and change the color to red and also change the background color to 
+yellow.-->
+
+<html>
+   <head>
+      <style>
+         h1
+         {
+             font-size: 6pt;
+             color: red;
+         }
+         body
+         {
+            background-color: yellow;
+         }
+      </style>
+   </head>
+   <body>
+      <h1 align="center"><u>Project Management</u></h1>
+      <fieldset style="background-color:cyan;">
+         <b>Project Name</b> <input type="text" placeholder="project name"><br><br>
+         <b>Assigned to</b> <select>
+                       <option>Er Merry Petision</option>
+                       <option>Mr. Sham Kumar</option>
+                       <option>Mr. Yadav Kale</option>
+                     </select><br><br>
+         <b>Start Date</b> <input type="date"><br><br>
+         <b>End Date</b> <input type="date"><br><br>
+         <b>Priority</b> <input type="radio"><b>High</b>
+                  <input type="radio"><b>Average</b>
+                  <input type="radio"><b>Low</b><br><br>
+         <b>Description</b> <textarea rows="2" cols="30" ></textarea><br><br>
+         <input  type="submit" value="Submit" style="background-color: forestgreen;">
+         <input type="reset" value="Clear" style="background-color: blue;">
+      </fieldset>
+   </body>
+</html>

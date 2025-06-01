@@ -1,0 +1,43 @@
+<!--Q.1) Design an HTML form to accept two strings from the user. Write a 
+PHP script for the following.
+a. Find whether the small string appears at the start of the large string. 
+b. Find the position of the small string in the big string. 
+c. Compare both the string for first n characters, also the comparison 
+   should not be case sensitive.-->
+
+<html> 
+   <body> 
+      <form method="POST" action="#"> 
+        Enter First String : <input type="text" name="t1"><br><br> 
+        Enter Second String : <input type="text" name="t2"><br><br> 
+        <input type="radio" value="r1" name="r">Find whether the small 
+         string appears at the start of the large string.<br>
+        <input type="radio" value="r2" name="r">Find the position of 
+         the small string in the big string.<br>
+        <input type="radio" value="r3" name="r">Compare both the string for
+        first n characters, also the comparison should not be case 
+        sensitive.<br><br>
+        <input type="submit" value="Submit">
+      </form> 
+   </body> 
+</html>
+<?php 
+  $s1=$_POST["t1"];
+  $s2=$_POST["t2"];
+  $ch=$_POST["r"];
+  switch($ch)
+  {
+     case r1:$pos=strpos($s1,$s2);
+             if($pos!=0)
+                echo "String 2 is not present at the start of the String 1.";
+             else
+                echo "String 2 is present at the start of the String 1.";
+             break;
+     case r2:$pos=strpos($s1,$s2);
+             echo($pos);
+             break;
+     case r3:$pos=strcasecmp($s1,$s2);
+             echo($pos);
+             break;
+  }
+?>

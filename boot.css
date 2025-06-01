@@ -1,0 +1,20 @@
+.blue
+{
+   background-color: blue;
+   height: 100px;
+}
+.col-4
+{
+   background-color: green;
+   height: 400px;
+}
+.col-8
+{
+   background-color: yellow;
+   height: 400px;
+}
+.red
+{
+   background-color: red;
+   height: 100px;
+}
